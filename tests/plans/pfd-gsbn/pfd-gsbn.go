@@ -2,6 +2,7 @@ package pfdgsbn
 
 import (
 	"context"
+
 	"github.com/celestiaorg/test-infra/testkit"
 	appsync "github.com/celestiaorg/test-infra/tests/helpers/app-sync"
 	fundaccounts "github.com/celestiaorg/test-infra/tests/helpers/fund-accs"
@@ -21,12 +22,6 @@ func PayForBlobAndGetShares(runenv *runtime.RunEnv, initCtx *run.InitContext) (e
 		err = appsync.RunSeed(runenv, initCtx)
 	case "validator":
 		err = fundaccounts.RunAppValidator(runenv, initCtx)
-	case "bridge":
-		err = fundaccounts.RunBridgeNode(runenv, initCtx)
-	case "full":
-		err = fundaccounts.RunFullNode(runenv, initCtx)
-	case "light":
-		err = fundaccounts.RunLightNode(runenv, initCtx)
 	}
 
 	if err != nil {

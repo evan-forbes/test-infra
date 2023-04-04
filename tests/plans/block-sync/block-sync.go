@@ -17,10 +17,6 @@ func BlockSyncLatest(runenv *runtime.RunEnv, initCtx *run.InitContext) (err erro
 	switch runenv.StringParam("role") {
 	case "validator":
 		err = blocksynclatest.RunValidator(runenv, initCtx)
-	case "bridge":
-		err = blocksynclatest.RunBridgeNode(runenv, initCtx)
-	case "full":
-		err = blocksynclatest.RunFullNode(runenv, initCtx)
 	}
 
 	if err != nil {
