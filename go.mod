@@ -13,7 +13,7 @@ replace (
 
 require (
 	cosmossdk.io/errors v1.0.0-beta.7 // indirect
-	github.com/celestiaorg/celestia-app v0.14.0-rc0.0.20230404224230-4d582de87366 // v0.12.0
+	github.com/celestiaorg/celestia-app v0.14.0-rc0.0.20230411092631-a49e6ef7f369 // v0.12.0
 	github.com/cosmos/cosmos-sdk v0.46.7
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/viper v1.14.0
